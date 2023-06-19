@@ -1,0 +1,46 @@
+/* Basic Resets */
+html{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    background-color: #f7f7f7;
+}
+body{
+    font-family: Arial;
+    color: #003636;
+    margin: 0;
+    display: grid;
+}
+
+img{
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+   margin: 0;
+   padding: 0; 
+}
+a{
+    text-decoration: none;
+    color: #003636;
+}
+
+.subtittle{
+    text-align: left;
+    font-size: 10rem;
+    padding-right: 4rem;
+    word-break: break-all;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1200px){
+    .subtittle{
+        font-size: 3rem;
+        padding: 0;
+    }
+}

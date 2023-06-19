@@ -1,0 +1,106 @@
+.experience{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+
+.experience .subtittle{
+    color: #a3f8f8;
+}
+
+.about-me{
+    font-size: 1.5rem;
+    color: #008f8f;
+    width: 60ch;
+    padding-bottom: 40px;
+}
+
+.about-me strong{
+    color: #004646;
+}
+
+.company{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 20px;
+    margin-bottom: 40px;
+    background-color: #e0ffff;
+    border-radius: 8px;
+    font-size: 1.125rem;
+}
+
+.company::before{
+    content: "";
+    top: 30px;
+    left: -6px;
+    position: absolute;
+    width: 6px;
+    height: 20px;
+    background: linear-gradient(#00ffff, #007a7a);
+    border-radius:  5px 0 0 5px;
+}
+
+.company-description p{
+    font-size: 1rem;
+    color: #008f8f;
+}
+
+.company-description span{
+    color:#1cb4b4;
+    font-size: 0.875rem;
+}
+
+.company-function ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+.company-function li{
+    padding: 10px;
+    background-color: #a3f8f8;
+    color: #008f8f;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 5px;
+}
+
+
+@media (max-width:1200px){
+    .experience{
+        padding: 80px 0;
+        grid-template-columns: 1fr;
+    }
+
+    .experience .subtittle{
+        margin: 0 30px;
+    }
+
+    .about-me{
+        margin: 40px 30px;
+        width: auto;
+        min-width: 25ch;
+    }
+
+    .company{
+        margin-bottom: 20px;
+        font-size: 1.25rem;
+    }
+    .company-description p{
+        font-size: 1.125rem;
+    }
+
+}
+
+@media (max-width: 820px){
+    .company{
+        grid-template-columns: 1fr;
+        margin: 20px 30px;
+    }
+}
