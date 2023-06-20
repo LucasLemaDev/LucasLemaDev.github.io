@@ -5,18 +5,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Desenvolvedor FullStack, Localizado no Rio de Janeiro">
         <title>Lucas Lema - Desenvolvedor</title>
-        <link rel="stylesheet" href="/styles/styles.min.css">
+        <link rel="stylesheet" href="/styles/styles.css">
         <link rel="icon" href="./favicon.svg" type="image/svg+xml">
     </head>
-    <body>
+    <body onload="translate('en','lng-tag')">
         <header class="header">
             <h1>Lucas Lema</h1>
 
             <nav>
                 <ul class="header-menu">
-                    <li><a href="#experience">Experiência</a></li>
-                    <li><a href="#formation">Formação</a></li>
-                    <li><a href="#contact">Contato</a></li>
+                    <li><a href="#experience" lng-tag="Experience"></a></li>
+                    <li><a href="#formation" lng-tag="Education"></a></li>
+                    <li><a href="#contact" lng-tag="Contact"></a></li>
+                    <li id="btn-translate">
+                        <select name="language" id="translator">
+                            <option value="en">en-US</option>
+                            <option value="pt">pt-BR</option>
+                        </select>
+                    </li>
                 </ul>
             </nav>
         </header>
@@ -24,51 +30,27 @@
             <div class="introduction">
                 <img src="/images/picture1.jpg" alt="Lucas Lema" width="315" height="420">
 
-                <div class="me">
-                        <h1>Desenvolvedor <br>FullStack</h1>
-                        
-                        <p>Localizado no Rio de Janeiro 🏖</p>
-                </div>
+                <div class="me" lng-tag="Profession"></div>
             </div>
             <div class="experience" id="experience">
-                <h2 class="subtittle">Experiência</h2>
+                <h2 class="subtittle" lng-tag="Experience"></h2>
                 
                 <div>
-                    <article class="about-me">
-                        <p>
-                            Como <strong>Desenvolvedor FullStack Jr</strong> com 2 anos de experiência, tenho me expecializado em tecnologias full stack participando de projetos agéis. Minhas maiores atuações foram com <strong>.Net C#</strong> no desenvolvimento backend e <strong>React.Js</strong> no desenvolvimento Frontend em projetos ligados principalmente à área de <strong>Óleo e Energia</strong>.  
-                        </p>
-    
-                        <p>
-                            Ao longo deste tempo de atuação na área, eu tenho consistentemente entregue soluções que atenderam meus clientes e colegas. Alavancando grandes desenvolvimentos nas minhas habilidades de solução de problemas, análise e trabalho em equipe, tenho orgulho na minha habilidade de colaborar eficientemente entre equipes multifuncionais, garantindo a entrega do projeto.
-                        </p>
-    
-                        <p>
-                            Com paixão pelo aprendizado continuo e me mantendo atualizado, estou sempre tentando expandir e comparrtilhar o meu conhecimento e entregar os melhores resultados possíveis aos meus clientes.
-                        </p>
-                    </article>
-                    
-
+                    <article class="about-me" lng-tag="AboutMe"></article>
                     <div class="carrear-history">
                         <section class="company">
                             <div class="company-description">
-                                <h3>Indra Brasil <br><span>2021-2022</span></h3>
-    
-                                <p>
-                                    Desenvolvi ferramentas de gestão e acompanhamento de recursos humanos como forma de otimizar e automatizar funções, aumentando a produtividade em 800% de atividades cotidianas. Assim como automatização de processos para serviços de atendimento service desk.
-                                </p>
-                                <p>
-                                    Alinhar com a equipe de desenvolvimento de software e auxiliar no desenvolvimento do sistema.
-                                    Analisando e verificando o desenvolvimento de projetos de acordo com os requisitos do cliente e modificá-lo com perspectiva para alinhá-lo com a necessidade do negócio.
-                                </p>
+                                <h3 lng-tag="company-name1"></h3>
+
+                                <div lng-tag="company-description1"></div> 
                             </div>
     
                             <div class="company-function">
-                                <h3> Analista de Sistemas Jr/ Desenvolvedor Fullstack Jr</h3>
+                                <h3 lng-tag="company-function1"></h3>
     
                                 <ul>
                                     <li>.Net C#</li>
-                                    <li>Automação de processos</li>
+                                    <li>RPA</li>
                                     <li>Html</li>
                                     <li>CSS</li>
                                     <li>JavaScript</li>
@@ -81,23 +63,17 @@
                         
                         <section class="company">
                             <div class="company-description">
-                                <h3>Radix Engenharia e Software <br><span>2022-2023</span></h3>
-
-                                <p>
-                                    Junto a equipes de desenvolvimento multifuncionais, desenvolvi e otimizei sistemas de clientes para um melhor aproveitamento de seus recursos tanto nas interfaces e experiências de usuário quanto no processamento e armazenamento em servidores.
-                                </p>
-                                <p>
-                                    Outras de minhas funções eram a análise, mapeamento e manutenção de infraestrutura de rede. Através de monitoramentos em PowerShell manter a saúde e integridade dos sistemas de clientes.
-                                </p>
+                                <h3 lng-tag="company-name2"></h3>
+                                <div lng-tag="company-description2"></div>
                             </div>
     
                             <div class="company-function">
-                                <h3>Desenvolvedor Fullstack Jr</h3>
+                                <h3 lng-tag="company-function2"></h3>
     
                                 <ul>
                                     <li>Azure DevOps</li>
                                     <li>.Net C#</li>
-                                    <li>Automação de processos</li>
+                                    <li>RPA</li>
                                     <li>PowerShell</li>
                                     <li>Html</li>
                                     <li>CSS</li>
@@ -117,34 +93,36 @@
             </div>
             <section class="formation">
                 <div class="formation-container" id="formation">
-                    <h2 class="subtittle">Formação</h2>
+                    <h2 class="subtittle" lng-tag="Education"></h2>
 
                     <div>
-                        <p>
-                            Minha mais recente experiência acadêmica foi o <strong>bacharel</strong>🎓 em <strong>Análise e Desenvolvimento de Sistemas </strong>. Além disso me mantenho sempre atualizado com cursos intensivos online.
-                        </p>
+                        <p lng-tag="education-introduction"></p>
 
                         <ul class="graduation-list">
                             <li class="graduation">
-                                <span class="graduation-type">Bacharel</span>
-                                <h3 class="graduation-name">Análise e Desenvolvimento <br>de Sistemas</h3>
-                                <span class="graduation-place">Universidade Cândido Mendes</span>
+                                <span class="graduation-type" lng-tag="graduation-type"></span>
+
+                                <h3 class="graduation-name" lng-tag="graduation-name"></h3>
+
+                                <span class="graduation-place" lng-tag="graduation-place"></span>
                             </li>
                         </ul>
 
                         <div class="graduation-extra">
                             <div class="courses">
-                                <h4>Cursos Intensivos</h4>
+                                <h4 lng-tag="courses-tittle"></h4>
+
                                 <ul>
                                     <li>C# MVC</li>
-                                    <li>HTML CSS para Iniciantes</li>
+                                    <li lng-tag="courses-name1"></li>
                                 </ul>
                             </div>
                             <div class="languages">
-                                <h4>Idiomas</h4>
+                                <h4 lng-tag="languages-tittle"></h4>
+
                                 <ul>
-                                    <li>Inglês <span>/ Fluente</span></li>
-                                    <li>Espanhol <span>/ Básico</span></li>
+                                    <li lng-tag="languages-english"></li>
+                                    <li lng-tag="languages-spanish"></span></li>
                                 </ul>
                             </div>
                         </div>
@@ -155,15 +133,15 @@
         </main>
         <footer id="contact">
             <div class="contact">
-                <p>
-                    Estou disponível para novos projetos no momento.<br> 
-                    Entre em contato comigo para marcarmos uma conversa👋
-                </p>
+                <p lng-tag="contact-text"></p>
+
                 <div>
                     <h1>llematrab@gmail.com</h1>
                     <h1>+55 21 98345-1570</h1>
                 </div>
             </div>
         </footer>
+        <script src="./script/translate.js"></script>
+        <script src="./script/index.js"></script>
     </body>
 </html>

@@ -1,0 +1,23 @@
+{
+    "Experience": "Experience",
+    "Education": "Education",
+    "Contact": "Contact",
+    "Profession": "<h1>Full-Stack<br> Developer</h1><p>Located in Rio de Janeiro 🏖</p>",
+    "AboutMe": "<p>As a Full-Stack Developer with two years of experience, I specialize in full-stack technologies and have participated in agile projects. My most significant performances have been in backend development using .Net, C#, and frontend development using React.Js and Node.Js. These projects were mainly related to the Oil & Energy industry.</p><p>Throughout my career, I have consistently delivered effective solutions that meet the needs of both my clients and colleagues. By leveraging my strong analytical and problem-solving skills, as well as my ability to work effectively in a team, I take pride in my ability to collaborate efficiently across cross-functional teams, ensuring that projects are completed successfully.</p><p>With a passion for continuous learning and staying up-to-date, I am always striving to expand my knowledge and deliver the best possible results to my clients. I have primarily been focusing on web development and cloud technologies.</p>",
+    "company-name1": "Indra Brazil<br><span>2021-2022</span>",
+    "company-description1": "<p>Developed tools to manage and monitor human resources, optimizing and automating functions which has resulted in an 800% increase in daily productivity. As well as process automation for service desk services.</p><p>Align with the software development team to assist with system development. The responsibilities include analyzing and verifying project development according to the client's requirements, and modifying it to align with the business needs.</p>",
+    "company-function1": "Junior System Analyst/<br> Full-Stack Developer",
+    "company-name2": "Radix Software and Engenieering <br><span>2022-2023</span>",
+    "company-description2": "<p>Working alongside cross-functional development teams, I collaborated in the development and optimization of client systems to maximize resource utilization, both in terms of user interfaces and experiences, as well as processing and storage on servers. In addition, I was responsible for analyzing, mapping, and maintaining network infrastructure. Through monitoring with PowerShell, ensuring the health and integrity of customer systems.</p>",
+    "company-function2": "Junior Full-Stack Developer",
+    "education-introduction": "My most recent academic experience was the <strong>Bachelor</strong>🎓 in <strong>System Analysis and Development </strong>. In addition, I make it a priority to stay current with the latest developments in my field by regularly enrolling in rigorous online courses.",
+    "graduation-type": "Bachelors",
+    "graduation-name": "System Analysis and Development",
+    "graduation-place": "Universisdade Cândido Mendes",
+    "courses-tittle": "Courses",
+    "courses-name1": "HTML and CSS for Beginners",
+    "languages-tittle": "Languages",
+    "languages-english": "English<span> /Fluent</span>",
+    "languages-spanish": "Spanish<span> /Basic</span>",
+    "contact-text": "I am available for new projects at the moment.<br> Contact me for a conversation👋"
+}
