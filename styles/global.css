@@ -1,13 +1,39 @@
+:root{
+    --background-color-1: #f7f7f7;
+    --background-color-2: #e0ffff;
+    --color-1: #e0ffff;
+    --color-2: #a3f8f8;
+    --color-3: #00ffff;
+    --color-4: #007a7a;
+    --color-5: #143838;
+    --color-6: #004646;
+    --color-7: #002424;
+    --text-tittle: #003636;
+    --text: #008f8f;
+    --strong: #004646;
+}
+
+@media (prefers-color-scheme: dark){
+    :root{
+        --background-color-1: #002424;
+        --background-color-2: #143838;
+        --text-tittle: #edffff;
+        --text: #00ffff;
+        --strong: #fff;
+    }
+}
+
+
 /* Basic Resets */
 html{
     margin: 0;
     padding: 0;
     display: grid;
-    background-color: #f7f7f7;
+    background-color: var(--background-color-1);
 }
 body{
     font-family: Arial;
-    color: #003636;
+    color: var(--text-tittle);
     margin: 0;
     display: grid;
 }
@@ -27,7 +53,7 @@ h6{
 }
 a{
     text-decoration: none;
-    color: #003636;
+    color: var(--text-tittle);
 }
 
 .subtittle{

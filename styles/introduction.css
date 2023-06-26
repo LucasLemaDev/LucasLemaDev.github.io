@@ -14,12 +14,12 @@
 .me{
     align-self: center;
     font-size: 2.25rem;
-    color: #002424;
+    color: var(--text-tittle);
 }
 
 .me p{
     font-size: 1.5rem;
-    color: #008f8f;
+    color: var(--text);
 }
 
 .me h1{

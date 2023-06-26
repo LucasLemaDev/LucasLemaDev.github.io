@@ -54,7 +54,7 @@
     }
 
     .header a {
-        background-color: #f3f3f3;
+        background-color: var(--background-color-2);
         border-radius: 4px;
     }
 }
