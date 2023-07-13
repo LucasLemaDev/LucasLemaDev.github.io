@@ -1,22 +1,17 @@
 .formation{
-    background-color: #143838;
+    background-color: none;
 }
 
-.formation .subtittle{
-    color: #002424;
-}
 .formation-container{
-    max-width: 1200px;
     font-size: 1.5rem;
     margin: 0 auto;
-    padding: 80px;
     display: grid;
     grid-template-columns: 2fr 3fr;
-    color: #a3f8f8;
+    color: var(--text);
 }
 
 .formation-container strong{
-    color: white;
+    color: var(--strong);
 }
 .graduation-list{
     display: flex;
@@ -26,10 +21,11 @@
 }
 
 .graduation{
-    background-color: #002424;
+    background-color: var(--color-6);
     border-radius: 4px;
     padding: 20px;
     font-size: 1.25rem;
+    margin-left: 6px;
 }
 
 .graduation-type{
@@ -65,7 +61,6 @@
 
 
 .graduation-extra ul{
-    color: white;
     list-style: none;
     padding: 0;
 }
@@ -84,12 +79,13 @@
     margin-bottom: 40px;
     position: relative;
 }
-
+.courses h4::before{
+    text-align: center;
+}
 .courses h4::before{
     content: url(/images/cursos.svg);
-    position: absolute;
-    top: -5px;
-    left: -40px;
+    display: inline-block;
+    height: 100%;
 }
 
 .languages{

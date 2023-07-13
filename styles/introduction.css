@@ -1,32 +1,10 @@
-.introduction{
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 2fr 3fr ;
-
-}
-
-.introduction img{
-    max-height: 420px;
-    border-radius: 8px;
-}
-
-.me{
-    align-self: center;
-    font-size: 2.25rem;
-    color: var(--text-tittle);
-}
-
-.me p{
-    font-size: 1.5rem;
-    color: var(--text);
-}
-
-.me h1{
+.introduction h1{
+    color: var(--strong);
     position: relative;
+    font-size: 3rem;
 }
 
-.me h1::before{
+.introduction h1::before{
     content: "";
     position: absolute;
     top: -25px;
@@ -34,11 +12,11 @@
     width: 20px;
     height: 120px;
     border-radius: 4px;
-    background-color: darkcyan;
+    background-color: var(--color-3);
     transform: rotate(45deg);
 
 }
-.me h1::after{
+.introduction h1::after{
     content: "";
     position: absolute;
     z-index: -1;
@@ -47,10 +25,25 @@
     width: 20px;
     height: 120px;
     border-radius: 4px;
-    background-color: #a3f8f8;
+    background-color: var(--color-4);
     transform: rotate(45deg);
 
 }
+
+.me{
+    align-self: center;
+    color: var(--text-tittle);
+}
+
+.me h2{
+    font-size: 2rem;
+}
+
+.me p{
+    font-size: 1.5rem;
+    color: var(--text);
+}
+
 @media (max-width:1275px){
     
     .introduction{

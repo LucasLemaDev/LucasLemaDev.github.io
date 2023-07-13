@@ -1,6 +1,8 @@
 :root{
-    --background-color-1: #f7f7f7;
+    --background-color-1: #e6e5e5;
     --background-color-2: #e0ffff;
+    --mouse-shadow-color-1: #a3f8f8;
+    --mouse-shadow-color-2: #e2e0e0;
     --color-1: #e0ffff;
     --color-2: #a3f8f8;
     --color-3: #00ffff;
@@ -15,10 +17,12 @@
 
 @media (prefers-color-scheme: dark){
     :root{
-        --background-color-1: #002424;
-        --background-color-2: #143838;
+        --background-color-1: #003636;
+        --background-color-2: rgb(20, 56, 56, 0.5);
+        --mouse-shadow-color-1: #013b3b;
+        --mouse-shadow-color-2: #002020;
         --text-tittle: #edffff;
-        --text: #00ffff;
+        --text: #a3f8f8;
         --strong: #fff;
     }
 }
@@ -30,6 +34,8 @@ html{
     padding: 0;
     display: grid;
     background-color: var(--background-color-1);
+    overflow: hidden;
+    font-size: 25px;
 }
 body{
     font-family: Arial;
@@ -56,17 +62,51 @@ a{
     color: var(--text-tittle);
 }
 
+.body-shape{
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 1fr 1fr;
+    max-height: 100%;
+    gap: 40px;
+}
+
+.main{
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+
 .subtittle{
     text-align: left;
     font-size: 10rem;
     padding-right: 4rem;
     word-break: break-all;
     text-transform: uppercase;
+    display: none;
+}
+
+.mouse-shadow {
+    content:'';
+    position: absolute;
+    overflow: hidden;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(var(--mouse-shadow-color-1),var(--mouse-shadow-color-2) 15%, var(--background-color-1)80%) ;
+    filter: blur(4px);
+    z-index: -99;
+    border-radius: 50%;
 }
 
 @media (max-width: 1200px){
     .subtittle{
         font-size: 3rem;
         padding: 0;
+    }
+}
+@media (max-width: 975px){
+    .subtittle{
+        display: block;
+    }
+    .body-shape{
+        grid-template-columns: 1fr;
     }
 }

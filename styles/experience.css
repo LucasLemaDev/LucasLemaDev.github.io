@@ -1,7 +1,5 @@
 .experience{
-    max-width: 1200px;
     margin: 0 auto;
-    padding: 80px;
     display: grid;
     grid-template-columns: 2fr 3fr;
 }
@@ -11,9 +9,10 @@
 }
 
 .about-me{
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: var(--text);
-    width: 60ch;
+    width: 40ch;
+    padding-top: 80px;
     padding-bottom: 40px;
 }
 
@@ -24,13 +23,17 @@
 .company{
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 30px;
     padding: 20px;
     margin-bottom: 40px;
-    background-color: var(--background-color-2);
     border-radius: 8px;
     font-size: 1.125rem;
+    transition: 0.4s;
+}
+
+.company:hover{
+    background-color: var(--background-color-2) ;
 }
 
 .company::before{
@@ -47,6 +50,7 @@
 .company-description p{
     font-size: 1rem;
     color: var(--text);
+    width: 40ch;
 }
 
 .company-description span{
