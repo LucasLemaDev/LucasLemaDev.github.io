@@ -71,6 +71,34 @@
     margin: 5px;
 }
 
+.company-clients li{
+    padding: 0;
+    margin: 0;
+    margin-right: 20px;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.company-clients .external-link::after{
+    align-self: center;
+    background-size: 1rem;
+    top: 10px;
+    left: 5px;
+}
+.external-link::after{
+    background-size: 23px;
+    background-image: url('../images/external-link-svgrepo-com.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    position: relative;
+    display: inline-block;
+    width: 23px; 
+    top: 3px;
+    left: 5px;
+    height: 23px;
+    content:"";
+}
+
 
 @media (max-width:1200px){
     .experience{
