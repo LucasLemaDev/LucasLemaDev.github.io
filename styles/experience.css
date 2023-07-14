@@ -87,7 +87,7 @@
 }
 .external-link::after{
     background-size: 23px;
-    background-image: url('../images/external-link-svgrepo-com.svg');
+    background-image: var(--external-link);
     background-repeat: no-repeat;
     background-position: top;
     position: relative;

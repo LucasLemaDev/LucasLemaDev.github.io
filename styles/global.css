@@ -11,6 +11,7 @@
     --text-tittle: #003636;
     --text: #008f8f;
     --strong: #004646;
+    --external-link: url("../images/external-link-svgrepo-light.svg");
 }
 
 @media (prefers-color-scheme: dark){
@@ -20,6 +21,7 @@
         --text-tittle: #edffff;
         --text: #00ffff;
         --strong: #fff;
+        --external-link: url("../images/external-link-svgrepo-dark.svg");
     }
 }
 
