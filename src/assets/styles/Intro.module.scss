@@ -1,0 +1,133 @@
+.about{
+    margin-top: 80px;
+    padding: 12rem 0;
+    background-color: var(--background-color-2);
+
+
+    .div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: center;
+        justify-items:center;
+
+        .aboutMe{
+            display: block;
+            padding: 1rem;
+
+            .profiles{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                a{
+                    max-width: 2rem;
+                }
+            }
+        }
+        
+    }
+}
+
+.techStack{
+    display: flex;
+    gap: 3rem;
+    padding-top: 3rem;
+    align-items: center;
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items:center;
+    }
+        
+    li{
+        svg{
+            width: 2.5rem;
+        }
+        padding: .5rem;
+        transition: .5s;
+        &:hover{
+            transform: translateY(-10px);
+        }
+    }
+}
+
+.photo{
+    position: relative;
+    height: 100%;
+
+    img{
+        position: absolute;
+        top:  var(--border-size);
+        left: var(--border-size);
+        height: var(--img-height);
+        width: var(--img-width);
+        border-radius: 4px;
+    }
+}
+
+.box {
+    height: calc(var(--img-height) + (2 * var(--border-size)));
+    width: calc(var(--img-width) + (2 * var(--border-size)));
+    background-image:conic-gradient(from var(--border-angle), transparent 20%, var(--primary-color-1), var(--primary-color-2));
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    animation: bg-spin 3s linear infinite;
+
+    @keyframes bg-spin {
+      to {
+        --border-angle: 1turn;
+      }
+    }
+}
+
+@property --border-angle {
+syntax: "<angle>";
+inherits: true;
+initial-value: 0turn;
+}
+
+@media (max-width: 800px) {
+    .about {
+        padding: 6rem 0;
+        
+        .div{
+            grid-template-columns: 1fr;
+        }
+    }    
+
+    .photo{
+        grid-row: 1;
+    }
+
+    .aboutMe{
+        text-align: center;
+
+        .profiles{
+            justify-content: center;
+        }
+    }
+
+    .techStack{
+        display: block;
+        text-align: center;
+
+        ul{
+            margin-top: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0 3rem;
+        }
+    }
+
+}
+
+@media (max-width: 320px) {
+    .photo{
+        display: none;
+    }
+}
+

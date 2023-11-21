@@ -1,0 +1,50 @@
+.about{
+    background-color: var(--background-color-1);
+    padding: 8rem 0;
+    position: relative;
+    
+    .aboutDiv{
+        display: grid;
+        grid-template-columns: 3fr 4fr;
+        gap: 4rem;
+        justify-content: left;
+
+        .content{
+            max-width: 40ch;
+        }
+
+        img{
+            border-radius: 4px;
+        }
+        h3{
+            color: var(--primary-color-2);
+            font-size: 1.25rem;
+            margin: 0;
+        }
+        h2{
+            font-size: 1.5rem;
+        }
+        p{
+            color: #cecece;
+        }
+    }
+}
+
+
+@media (max-width: 800px) {
+    .about .aboutDiv{
+        grid-template-columns: 1fr;
+        
+        .content{
+            max-width: 60ch;
+        }
+    }
+
+    
+}
+
+@media (max-width: 400px) {
+    .about img {
+        display: none;
+    }
+}

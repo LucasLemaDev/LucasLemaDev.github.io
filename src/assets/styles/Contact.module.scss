@@ -1,0 +1,59 @@
+.contact{
+    padding: 8rem 0;
+    background-color: var(--background-color-1);
+}
+
+.dataContainer{
+    margin-top: 3rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.data{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    color: var(--primary-color-2);
+
+    svg{
+        font-size: 1.5rem;
+    }
+
+    h3{
+        color: white;
+    }
+
+    a{
+        color: #9c9c9c;
+        transition: all .3s ease;
+        &:hover{
+            color: var(--primary-color-2);
+        }
+    }
+    span{
+        color: #9c9c9c;
+    }
+}
+
+@media (max-width: 600px){
+    .dataContainer{
+        display: grid;
+        justify-content: center;
+    }
+
+    .data{
+        display: block;
+    }
+}
+
+
+@media (max-width: 900px){
+
+    .contact{
+        text-align: center;
+    }
+    .portfolioItem{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
