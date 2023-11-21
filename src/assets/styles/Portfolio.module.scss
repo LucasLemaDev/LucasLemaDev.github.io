@@ -84,7 +84,9 @@
 }
 
 @media (max-width: 900px){
-
+    .portfolio{
+        text-align: center;
+    }
     .portfolioItem{
         grid-template-columns: 1fr;
         gap: 2rem;

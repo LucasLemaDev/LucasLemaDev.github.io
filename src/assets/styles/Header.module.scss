@@ -33,7 +33,8 @@
         transition: .3s;
         color: white;
         position: relative;
-
+        cursor: pointer;
+        
         &::after{
             content: '';
             height: 4px;

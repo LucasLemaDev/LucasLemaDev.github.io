@@ -11,7 +11,7 @@ const About = () => {
                 <h3 className='title'>Sobre Mim</h3>
                 <h2>Profissional dedicado localizado no Rio de Janeiro, Brasil📍</h2>
                 <p>
-                    Como Desenvolvedor FullStack Jr com 2 anos de experiência, tenho me expecializado em tecnologias full stack participando de projetos agéis. Minhas maiores atuações foram com .Net C# no desenvolvimento backend e React.Js no desenvolvimento Frontend em projetos ligados principalmente à área de Óleo e Energia.
+                  Como Engenheiro de Software tenho me especializado em tecnologias full stack,  posssuindo um arsenal de habilidades em HTML, CSS, JavaScript, TypeScript, React, SCSS, .Net Framework, C#, Node e Powershell. Participei de equipes multifuncionais, internacionais e de projetos ágeis. Minhas maiores atuações foram no desenvolvimento, implementação e otimização de APIs, desenvolvimento de aplicativos desktop e web, desenvolvimento de monitoramentos e sustentação de sistemas principalmente para grandes empresas do setor de Óleo e Energia.
                 </p>
             </div>
         </div>

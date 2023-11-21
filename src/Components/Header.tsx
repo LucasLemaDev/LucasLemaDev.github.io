@@ -59,9 +59,9 @@ const Header = () => {
                 <nav ref={dropdownMenu} className={styles.dropdownMenu}>
                     <ul>
                         <li><Link to="hero" className={styles.navLink} spy={true} smooth={true} offset={-80} duration={500}>Home</Link></li>
-                        <li><Link to="sobre" className={styles.navLink} spy={true} smooth={true} offset={-80} duration={500}>About</Link></li>
-                        <li><Link to="portfolios" className={styles.navLink} spy={true} smooth={true} offset={-80} duration={500}>Portfolios</Link></li>
-                        <li><Link to="contato" className={styles.navLink} spy={true} smooth={true} offset={-80} duration={500}>Contact</Link></li>
+                        <li><Link to="sobre" className={styles.navLink} spy={true} smooth={true} offset={-80} duration={500}>Sobre</Link></li>
+                        <li><Link to="portfolios" className={styles.navLink} spy={true} smooth={true} offset={-80} duration={500}>Projetos</Link></li>
+                        <li><Link to="contato" className={styles.navLink} spy={true} smooth={true} offset={-80} duration={500}>Contato</Link></li>
                     </ul>
                 </nav>
             </div>
